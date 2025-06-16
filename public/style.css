@@ -2,8 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     /* 글꼴 설정: Arial 없으면 기본 sans-serif */
-    background-color: #f0f0f0;
-    /* 배경색: 연한 회색 */
+    background-color: #fefefe;
+    /* 배경색 */
     margin: 0;
     /* 브라우저 기본 여백 제거 */
     padding: 0;
@@ -16,4 +16,40 @@ body {
     /* 수직 중앙 정렬 */
     height: 100vh;
     /* 뷰포트 높이 100% -> 화면 전체 차지 */
+}
+
+/* 전체 콘텐츠를 감싸는 박스 스타일 */
+.container {
+    /* 배경 흰색 */
+    background-color: white;
+    /* 안쪽 여백 (상하좌우 2rem) */
+    padding: 2rem;
+    /* 모서리 둥글게 */
+    border-radius: 8px;
+    /* 약한 그림자 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 전체 너비 */
+    width: 100%;
+    /* 최대 너비 400px -> 모바일에서도 보기 좋게 */
+    max-width: 400px;
+}
+
+/* 제목 스타일 */
+h1 {
+    /* 가운데 정렬 */
+    text-align: center;
+    /* 진회색 텍스트 */
+    color: #333;
+}
+
+/* 폼 내부 입력칸 스타일 */
+form {
+    /* 한 줄에 정렬하기 위해 flex 사용 */
+    display: flex;
+    /* 세로 정렬 */
+    flex-direction: column;
+    /* 입력 요소 사이 간격 */
+    gap: 10px;
+    /* 위쪽 여백 */
+    margin-top: 1rem;
 }
